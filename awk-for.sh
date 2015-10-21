@@ -1,0 +1,1 @@
+zgrep -i logdevice scheduler-service_LOGI_12_30_PM_to_8_PM_25_09_2015_UTC.log.gz | awk -F"serialNumber=\"" '{$1="";print $0}' | awk '{n = split($0,a,"\"\/><logDevice  "); for (var in a) print a[var] }' | sort
