@@ -1,0 +1,3 @@
+#Following is used to undo the last commit. However, the changes are brought into staging and not working directory.
+git reset --soft HEAD~
+
